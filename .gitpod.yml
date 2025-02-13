@@ -1,0 +1,9 @@
+tasks:
+  - name: Install Node.js & npm
+    init: |
+      curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+      sudo apt install -y nodejs
+      npm install -g npm@10.9.2
+    command: |
+      node -v
+      npm -v
